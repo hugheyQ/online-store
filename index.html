@@ -6,9 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Store</title>
 
+    <link rel="stylesheet" href="dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/css/owl.theme.default.min.css">
+
+    <!-- Icofont CSS -->
+    <link rel="stylesheet" href="dist/css/icofont.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="dist/css/styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <div class="top py-2">
+            <div class="container d-flex justify-content-between">
+                <ul class="top__left d-flex p-0">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+
+                <div class="top__right d-flex">
+                    <div><a href="#">My Wishlist</a></div>
+                    <div><a href="#">Track Your Order</a></div>
+                    <div>
+                        <a href="#"><i class="icofont-facebook"></i></a>
+                        <a href="#"><i class="icofont-twitter"></i></a>
+                        <a href="#"><i class="icofont-instagram"></i></a>
+                        <a href="#"><i class="icofont-linkedin"></i></a>
+                        <a href="#"><i class="icofont-youtube-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+            <div class="container">
+              <a class="navbar-brand d-lg-none" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+                <a class="navbar-brand d-none d-lg-block" href="#">Navbar</a>
+
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Special Offers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Brands</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Shop <i class="icofont-simple-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <div class="nav-right">
+                    <button class="btn navbar-btn" data-bs-toggle="offcanvas" data-bs-target="#searchBox" aria-controls="searchBox"><i class="icofont-search"></i></button>
+                    <button class="btn navbar-btn" data-bs-toggle="offcanvas" data-bs-target="#cartBox" aria-controls="cartBox"><i class="icofont-cart-alt"></i><span>1</span></button>
+                    <a href="#" class="btn signin-btn"><i class="icofont-lock"></i> Sign in</a>
+                </div>
+                
+
+              </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <!-- JQuery File -->
+    <script src="dist/js/jquery.min.js"></script>
+
+    <!-- Owl carousel javascript file -->
+    <script src="dist/js/owl.carousel.min.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="dist/js/bootstrap.bundle.min.js"></script>  
+
+    <!-- Custom Javascipt -->
+    <script src="dist/js/custom.js"></script>
+
+    <!-- <script>
+        const dropDown = document.querySelector('.dropdown');
+
+        dropDown.addEventListener('mouseover', function() {
+            
+        })
+    </script> -->
 </body>
 </html>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="searchBox" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Search</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      ...
+    </div>
+  </div>
+
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartBox" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Cart</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      ...
+    </div>
+  </div>
